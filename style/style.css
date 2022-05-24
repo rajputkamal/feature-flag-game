@@ -1,0 +1,415 @@
+* {
+  box-sizing: border-box;
+}
+body {
+  margin: 0;
+  padding: 0;
+  font-size: 14px;
+}
+
+section {
+  border-radius: 10px;
+}
+
+.left-side-content {
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+}
+.step-one-left {
+  background-color: #f4f7fe;
+  border-radius: 15px 0 0 15px;
+  height: 650px;
+  padding: 50px;
+  justify-content: center;
+}
+
+.steps {
+  display: flex;
+  justify-content: space-between;
+}
+
+p.step {
+  width: 35px;
+  height: 35px;
+  font-size: 18px;
+  background-color: #345eff;
+  border-radius: 50%;
+  padding-top: 3px;
+  color: #fff;
+  text-align: center;
+}
+
+.opacity-half {
+  opacity: 0.4;
+}
+
+.opacity-full {
+  opacity: 1;
+}
+/* 
+p.step::after {
+  content: "";
+  background-color: black;
+  opacity: 0.1;
+  width: 25%;
+  height: 2px;
+  position: absolute;
+  left: 70px;
+  top: 16px;
+} */
+/* @media screen and (min-width: 480px) {
+  body {
+    background-color: lightgreen;
+  }
+} */
+.feature-steps {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.step-one-left h1 {
+  font-size: 48px;
+  font-weight: 700;
+  margin: 40px 0;
+}
+
+h1 span {
+  color: #345eff;
+}
+
+.form > input {
+  border: none;
+  border-radius: 10px;
+  width: 315px;
+  height: 45px;
+  text-indent: 10px;
+  outline: none;
+}
+
+button {
+  background-color: #345eff;
+  border: 1px solid #345eff;
+  border-radius: 7px;
+  color: #fff;
+  padding: 8px 24px;
+  margin-top: 15px;
+}
+.step-one-right {
+  background-color: #345eff;
+  border-radius: 0 15px 15px 0;
+  height: 650px;
+  padding: 50px 50px 50px 50px;
+}
+.inner-screen {
+  background-color: #fff;
+  width: 100%;
+  height: 425px;
+  border-radius: 10px;
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.dots {
+  display: flex;
+  padding: 10px 10px 0 10px;
+}
+
+.red {
+  background-color: #c7493e;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+}
+.yellow {
+  background-color: #f4be50;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  margin-left: 5px;
+  margin-right: 5px;
+}
+
+.green {
+  background-color: #5fc454;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+}
+
+.display-screen {
+  background-color: #f7fafc;
+  width: 100%;
+  height: 150px;
+  text-align: center;
+  margin-top: 15px;
+}
+
+.display-screen p {
+  padding: 60px 0 60px 0;
+  margin: 0;
+  font-size: 14px;
+  font-weight: 400;
+  text-transform: uppercase;
+}
+
+.stats {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 30px;
+}
+.stats-inner-green {
+  width: 28%;
+  height: 20%;
+  background: linear-gradient(
+      0deg,
+      rgba(255, 255, 255, 0.8),
+      rgba(255, 255, 255, 0.8)
+    ),
+    #16a0a0;
+  border-radius: 8px;
+  padding: 10px;
+}
+.screens {
+  padding: 0 20px;
+}
+
+.stats-inner-green .block {
+  width: 30px;
+  height: 20px;
+  background-color: #16a0a0;
+  margin: 0;
+  border-radius: 3px;
+}
+
+.stats-inner-green .percentage {
+  font-size: 28px;
+  font-weight: 400;
+  color: #16a0a0;
+  margin: 0;
+}
+.stats-inner-yellow {
+  width: 28%;
+  height: 20%;
+  background: linear-gradient(
+      0deg,
+      rgba(255, 255, 255, 0.8),
+      rgba(255, 255, 255, 0.8)
+    ),
+    #ffa053;
+  border-radius: 8px;
+  padding: 10px;
+}
+
+.stats-inner-yellow .block {
+  width: 30px;
+  height: 20px;
+  background-color: #ffa053;
+  margin: 0;
+  border-radius: 3px;
+}
+
+.stats-inner-yellow .percentage {
+  font-size: 28px;
+  font-weight: 400;
+  color: #ffa053;
+  margin: 0;
+}
+.stats-inner-red {
+  width: 28%;
+  height: 20%;
+  background: linear-gradient(
+      0deg,
+      rgba(255, 255, 255, 0.9),
+      rgba(255, 255, 255, 0.9)
+    ),
+    #eb106c;
+  border-radius: 8px;
+  padding: 10px;
+}
+
+.stats-inner-red .block {
+  width: 30px;
+  height: 20px;
+  background-color: #eb106c;
+  margin: 0;
+  border-radius: 3px;
+}
+
+.stats-inner-red .percentage {
+  font-size: 28px;
+  font-weight: 400;
+  color: #eb106c;
+  margin: 0;
+}
+
+/* step-2 css */
+
+select#options {
+  color: #1e2c4f;
+  font-size: 14px;
+  width: 60%;
+  height: 45px;
+  outline: none;
+  text-indent: 10px;
+  border: none;
+  background: #fff;
+  border-radius: 10px;
+}
+
+select > options {
+  width: 60%;
+  height: 45px;
+  outline: none;
+  text-indent: 10px;
+  border: none;
+  background: #fff;
+  border-radius: 10px;
+}
+
+.step-3-form p {
+  font-size: 16px;
+  color: #1e2c4f;
+}
+
+.toggle-desc {
+  margin-top: 10px;
+  color: #1e2c4f;
+  position: relative;
+}
+
+.toggle-desc::after {
+  content: "";
+  background-image: url(../assets/images/arrow.png);
+  width: 75px;
+  height: 34px;
+  position: absolute;
+  display: inline-block;
+  bottom: -10px;
+  left: 225px;
+}
+
+form.form {
+  position: relative;
+}
+
+.display-screen-img img {
+  width: 100%;
+  height: 190px;
+}
+
+.hide {
+  visibility: visible;
+}
+
+.show {
+  visibility: hidden;
+}
+/* Toggle button css */
+
+.switch {
+  position: absolute;
+  display: inline-block;
+  width: 60px;
+  height: 34px;
+  left: 240px;
+  bottom: 36px;
+}
+
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  transform: 0.4s;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 26px;
+  width: 26px;
+  left: 4px;
+  bottom: 4px;
+  background-color: #fff;
+  transition: 0.4s;
+}
+input:checked + .slider {
+  background-color: #2196f3;
+}
+
+input:focus + .slider {
+  box-shadow: 0 0 1px #2196f3;
+}
+
+input:checked + .slider:before {
+  transform: translateX(26px);
+}
+
+.slider.round {
+  border-radius: 34px;
+}
+
+.slider.round:before {
+  border-radius: 50%;
+}
+
+/* JavaScript css to show and hide elements */
+
+#step-2,
+#step-3,
+#final {
+  display: none;
+}
+
+@media screen and (max-width: 992px) {
+  .step-one-left {
+    padding: 0 8px;
+    height: 500px;
+  }
+  .step-one-right {
+    height: 500px;
+    padding: 0 10px;
+  }
+  .step-one-left h1 {
+    font-size: 42px;
+    margin: 26px 0;
+  }
+}
+@media screen and (max-width: 767px) {
+  .step-one-left {
+    padding: 50px 10px;
+    height: 350px;
+  }
+
+  .step-one-right {
+    height: 375px;
+    padding: 25px 10px;
+  }
+  .step-one-left h1 {
+    font-size: 36px;
+    margin: 15px 0;
+  }
+  .stats-inner-green,
+  .stats-inner-yellow,
+  .stats-inner-red {
+    height: 100px;
+  }
+  .inner-screen {
+    height: 350px;
+  }
+  .display-screen-img img {
+    height: 165px;
+  }
+}

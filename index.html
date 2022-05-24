@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- CSS only -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="style/style.css" />
+    <title>Feature-flag-game</title>
+  </head>
+  <body>
+   
+    <section id="step-1">
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-12 col-md-6 step-one-left">
+            <div class="left-side-content">
+              <div class="steps">
+                <div class="feature-steps">
+                  <p class="step">1</p>
+                  <p>Add Feature</p>
+                </div>
+                <div class="feature-steps">
+                  <p class="step opacity-half" id="step_2">2</p>
+                  <p>Select Audience</p>
+                </div>
+                <div class="feature-steps">
+                  <p class="step opacity-half" id="step_3">3</p>
+                  <p>Schedule</p>
+                </div>
+                <div class="feature-steps">
+                  <p class="step opacity-half" id="step_4">4</p>
+                  <p>Launch</p>
+                </div>
+              </div>
+              <h1>Add a <span>Feature</span> Flag to initiate a release</h1>
+              <form action="" class="form">
+                <input type="text" placeholder="Daily graph" /><br />
+                <button type ="button" onclick="showSteps('step-1', 'step-2', 'step_2')">Add</button>
+              </form>
+            </div>
+          </div>
+          <div class="col-12 col-md-6 step-one-right">
+            <div class="inner-screen">
+              <div class="dots">
+                <span class="red"></span>
+                <span class="yellow"></span>
+                <span class="green"></span>
+              </div>
+              <hr />
+              <div class="screens">
+                <div class="stats">
+                  <div class="stats-inner-green">
+                    <p class="block"></p>
+                    <p class="percentage">80%</p>
+                    <p>stats</p>
+                  </div>
+                  <div class="stats-inner-yellow">
+                    <p class="block"></p>
+                    <p class="percentage">20</p>
+                    <p>stats</p>
+                  </div>
+                  <div class="stats-inner-red">
+                    <p class="block"></p>
+                    <p class="percentage">80%</p>
+                    <p>stats</p>
+                  </div>
+                </div>
+                <div class="display-screen">
+                  <p>Initiate release process to add a feature here</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="step-2">
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-12 col-md-6 step-one-left">
+            <div class="left-side-content">
+              <div class="steps">
+                <div class="feature-steps">
+                  <p class="step">1</p>
+                  <p>Add Feature</p>
+                </div>
+                <div class="feature-steps">
+                  <p class="step opacity-half" id="step_2">2</p>
+                  <p>Select Audience</p>
+                </div>
+                <div class="feature-steps">
+                  <p class="step opacity-half" id="step_3">3</p>
+                  <p>Schedule</p>
+                </div>
+                <div class="feature-steps">
+                  <p class="step opacity-half" id="step_4">4</p>
+                  <p>Launch</p>
+                </div>
+              </div>
+              <h1>Select your <span>Audience</span> for the feature</h1>
+              <form action="" class="form">
+                <select name="options" id="options">
+                  <option value="option 1">Option 1</option>
+                  <option value="option 2">Option 2</option>
+                  <option value="option 3">Option 3</option>
+                  <option value="option 4">Option 4</option>
+                </select>
+                <br />
+                <button type ="button" onclick="showSteps('step-2', 'step-3', 'step_3')">Next</button>
+              </form>
+            </div>
+          </div>
+          <div class="col-12 col-md-6 step-one-right">
+            <div class="inner-screen">
+              <div class="dots">
+                <span class="red"></span>
+                <span class="yellow"></span>
+                <span class="green"></span>
+              </div>
+              <hr />
+              <div class="screens">
+                <div class="stats">
+                  <div class="stats-inner-green">
+                    <p class="block"></p>
+                    <p class="percentage">80%</p>
+                    <p>stats</p>
+                  </div>
+                  <div class="stats-inner-yellow">
+                    <p class="block"></p>
+                    <p class="percentage">20</p>
+                    <p>stats</p>
+                  </div>
+                  <div class="stats-inner-red">
+                    <p class="block"></p>
+                    <p class="percentage">80%</p>
+                    <p>stats</p>
+                  </div>
+                </div>
+                <div class="display-screen">
+                  <p>Initiate release process to add a feature here</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="step-3">
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-12 col-md-6 step-one-left">
+            <div class="left-side-content">
+              <div class="steps">
+                <div class="feature-steps">
+                  <p class="step">1</p>
+                  <p>Add Feature</p>
+                </div>
+                <div class="feature-steps">
+                  <p class="step opacity-half" id="step_2">2</p>
+                  <p>Select Audience</p>
+                </div>
+                <div class="feature-steps">
+                  <p class="step opacity-half" id="step_3">3</p>
+                  <p>Schedule</p>
+                </div>
+                <div class="feature-steps">
+                  <p class="step opacity-half" id="step_4">4</p>
+                  <p>Launch</p>
+                </div>
+              </div>
+              <h1>Schedule your Release</h1>
+              <form action="" class="step-3-form">
+                <p>Starts on</p>
+                <input
+                  type="radio"
+                  id="Immediately"
+                  name="release_option"
+                  value="Immediately"
+                />
+                <label for="Immediately">Immediately</label> <br />
+                <input
+                  type="radio"
+                  id="Schedule"
+                  name="release_option"
+                  value="Schedule"
+                />
+                <label for="Schedule">Schedule</label>
+                <br />
+                <button type ="button" onclick="showSteps('step-3', 'final', 'step_4')">Release</button>
+              </form>
+            </div>
+          </div>
+          <div class="col-12 col-md-6 step-one-right">
+            <div class="inner-screen">
+              <div class="dots">
+                <span class="red"></span>
+                <span class="yellow"></span>
+                <span class="green"></span>
+              </div>
+              <hr />
+              <div class="screens">
+                <div class="stats">
+                  <div class="stats-inner-green">
+                    <p class="block"></p>
+                    <p class="percentage">80%</p>
+                    <p>stats</p>
+                  </div>
+                  <div class="stats-inner-yellow">
+                    <p class="block"></p>
+                    <p class="percentage">20</p>
+                    <p>stats</p>
+                  </div>
+                  <div class="stats-inner-red">
+                    <p class="block"></p>
+                    <p class="percentage">80%</p>
+                    <p>stats</p>
+                  </div>
+                </div>
+                <div class="display-screen">
+                  <p>Initiate release process to add a feature here</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="final">
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-12 col-md-6 step-one-left">
+            <div class="left-side-content">
+              <div class="steps">
+                <div class="feature-steps">
+                  <p class="step">1</p>
+                  <p>Add Feature</p>
+                </div>
+                <div class="feature-steps">
+                  <p class="step opacity-half" id="step_2">2</p>
+                  <p>Select Audience</p>
+                </div>
+                <div class="feature-steps">
+                  <p class="step opacity-half" id="step_3">3</p>
+                  <p>Schedule</p>
+                </div>
+                <div class="feature-steps">
+                  <p class="step opacity-half" id="step_4">4</p>
+                  <p>Launch</p>
+                </div>
+              </div>
+              <h1>
+                Your <br />
+                <span>Product Feature</span> <br />has been Released !
+              </h1>
+              <form action="" class="form">
+                <input type="text" placeholder="Daily graph" />
+                <br />
+                <p class="toggle-desc">You can now Toggle this feature</p>
+              </form>
+                <label class="switch">
+                  <input type="checkbox" value="Yes" checked />
+                  <span class="slider round" onclick="showContent('graph-img')"></span>
+                </label>
+            </div>
+          </div>
+          <div class="col-12 col-md-6 step-one-right">
+            <div class="inner-screen">
+              <div class="dots">
+                <span class="red"></span>
+                <span class="yellow"></span>
+                <span class="green"></span>
+              </div>
+              <hr />
+              <div class="screens">
+                <div class="stats">
+                  <div class="stats-inner-green">
+                    <p class="block"></p>
+                    <p class="percentage">80%</p>
+                    <p>stats</p>
+                  </div>
+                  <div class="stats-inner-yellow">
+                    <p class="block"></p>
+                    <p class="percentage">20</p>
+                    <p>stats</p>
+                  </div>
+                  <div class="stats-inner-red">
+                    <p class="block"></p>
+                    <p class="percentage">80%</p>
+                    <p>stats</p>
+                  </div>
+                </div>
+                <div class="display-screen">
+                  <div class="display-screen-img">
+                    <img src="assets/images/graph1.png" alt="graph" id="graph-img"/>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- JavaScript Bundle with Popper -->
+    <script src="js/script.js"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
