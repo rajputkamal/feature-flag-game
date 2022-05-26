@@ -41,8 +41,8 @@
               </div>
               <h1>Add a <span>Feature</span> Flag to initiate a release</h1>
               <form action="" class="form">
-                <input type="text" placeholder="Daily graph" /><br />
-                <button type ="button" onclick="showSteps('step-1', 'step-2', 'step_2')">Add</button>
+                <input type="text" value="Daily graph" /><br />
+                <button type ="button" onclick="showSteps('step-1', 'step-2')">Add</button>
               </form>
             </div>
           </div>
@@ -93,7 +93,7 @@
                   <p>Add Feature</p>
                 </div>
                 <div class="feature-steps">
-                  <p class="step opacity-half" id="step_2">2</p>
+                  <p class="step" id="step_2">2</p>
                   <p>Select Audience</p>
                 </div>
                 <div class="feature-steps">
@@ -105,16 +105,16 @@
                   <p>Launch</p>
                 </div>
               </div>
-              <h1>Select your <span>Audience</span> for the feature</h1>
+              <h1 id="step-2_heading">Select your <span>Audience</span> for the feature</h1>
               <form action="" class="form">
-                <select name="options" id="options">
-                  <option value="option 1">Option 1</option>
-                  <option value="option 2">Option 2</option>
-                  <option value="option 3">Option 3</option>
-                  <option value="option 4">Option 4</option>
+                <select name="options" id="options" multiple ="multiple">
+                  <option value="option 1">Customer 1</option>
+                  <option value="option 2">Customer 2</option>
+                  <option value="option 3">Customer 3</option>
+                  <option value="option 4">Customer 4</option>
                 </select>
                 <br />
-                <button type ="button" onclick="showSteps('step-2', 'step-3', 'step_3')">Next</button>
+                <button type ="button" onclick="showSteps('step-2', 'step-3')">Next</button>
               </form>
             </div>
           </div>
@@ -165,11 +165,11 @@
                   <p>Add Feature</p>
                 </div>
                 <div class="feature-steps">
-                  <p class="step opacity-half" id="step_2">2</p>
+                  <p class="step" id="step_2">2</p>
                   <p>Select Audience</p>
                 </div>
                 <div class="feature-steps">
-                  <p class="step opacity-half" id="step_3">3</p>
+                  <p class="step" id="step_3">3</p>
                   <p>Schedule</p>
                 </div>
                 <div class="feature-steps">
@@ -177,7 +177,7 @@
                   <p>Launch</p>
                 </div>
               </div>
-              <h1>Schedule your Release</h1>
+              <h1 id="step-3_heading">Schedule your Release</h1>
               <form action="" class="step-3-form">
                 <p>Starts on</p>
                 <input
@@ -195,7 +195,7 @@
                 />
                 <label for="Schedule">Schedule</label>
                 <br />
-                <button type ="button" onclick="showSteps('step-3', 'final', 'step_4')">Release</button>
+                <button type ="button" onclick="showSteps('step-3', 'final')">Release</button>
               </form>
             </div>
           </div>
@@ -246,24 +246,24 @@
                   <p>Add Feature</p>
                 </div>
                 <div class="feature-steps">
-                  <p class="step opacity-half" id="step_2">2</p>
+                  <p class="step" id="step_2">2</p>
                   <p>Select Audience</p>
                 </div>
                 <div class="feature-steps">
-                  <p class="step opacity-half" id="step_3">3</p>
+                  <p class="step" id="step_3">3</p>
                   <p>Schedule</p>
                 </div>
                 <div class="feature-steps">
-                  <p class="step opacity-half" id="step_4">4</p>
+                  <p class="step" id="step_4">4</p>
                   <p>Launch</p>
                 </div>
               </div>
-              <h1>
+              <h1 id="step-4_heading">
                 Your <br />
                 <span>Product Feature</span> <br />has been Released !
               </h1>
               <form action="" class="form">
-                <input type="text" placeholder="Daily graph" />
+                <input type="text" value="Daily graph" />
                 <br />
                 <p class="toggle-desc">You can now Toggle this feature</p>
               </form>
@@ -271,6 +271,9 @@
                   <input type="checkbox" value="Yes" checked />
                   <span class="slider round" onclick="showContent('graph-img')"></span>
                 </label>
+                <div class="home-link">
+                  <a href="#" onclick="showSteps('final', 'step-1')">Missed, start your game now!</a>
+                </div>
             </div>
           </div>
           <div class="col-12 col-md-6 step-one-right">

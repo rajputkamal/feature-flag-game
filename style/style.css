@@ -315,7 +315,7 @@ form.form {
   width: 60px;
   height: 34px;
   left: 240px;
-  bottom: 36px;
+  bottom: 76px;
 }
 
 .switch input {
@@ -372,6 +372,12 @@ input:checked + .slider:before {
 #final {
   display: none;
 }
+.home-link a {
+  text-decoration: none;
+  color: #345eff;
+  font-size: 16px;
+  font-weight: 400;
+} 
 
 @media screen and (max-width: 992px) {
   .step-one-left {
@@ -412,4 +418,11 @@ input:checked + .slider:before {
   .display-screen-img img {
     height: 165px;
   }
+  .home-link a {
+    font-size: 12px;
+  }
+  #step-2_heading, #step-3_heading, #step-4_heading {
+    font-size: 32px;
+  }
+  
 }
